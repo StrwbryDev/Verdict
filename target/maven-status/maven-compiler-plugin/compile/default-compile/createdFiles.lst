@@ -1,0 +1,11 @@
+dev\strwbry\verdict\commands\CommandFive.class
+dev\strwbry\verdict\commands\CommandHelp.class
+dev\strwbry\verdict\commands\CommandTwo.class
+dev\strwbry\verdict\utility\MsgUtility.class
+dev\strwbry\verdict\commands\CommandRootVerdict.class
+dev\strwbry\verdict\commands\CommandFour.class
+dev\strwbry\verdict\commands\CommandOne.class
+dev\strwbry\verdict\utility\Config.class
+dev\strwbry\verdict\commands\CommandThree.class
+dev\strwbry\verdict\Verdict.class
+dev\strwbry\verdict\commands\CommandReloadConfig.class
