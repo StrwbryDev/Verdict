@@ -1,14 +1,8 @@
-name: EventHorizon
-version: 1.0.0-alpha
-main: dev.strwbry.eventhorizon.EventHorizon
-description: 'A dynamic game mode that introduces configurable random server-wide events to enhance player engagement and replayability'
-authors: [Strwbry, xTri]
-contributors: [QarthO]
-website: https://github.com/StrwbryDev/EventHorizon
-api-version: '1.21.4'
-dependencies:
-  server:
-    FastAsyncWorldEdit:
-      required: false
-    PlaceholderAPI:
-      required: false
+name: Verdict
+version: 0.0.1-alpha
+main: dev.strwbry.verdict.Verdict
+description: 'Modern ticketing and moderation plugin, using the new dialog UI'
+authors: [Strwbry, QarthO]
+website: https://github.com/StrwbryDev/Verdict
+api-version: '1.21.5'
+loader: dev.strwbry.verdict.utility.VerdictLoader

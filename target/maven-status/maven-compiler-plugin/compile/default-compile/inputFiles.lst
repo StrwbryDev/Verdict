@@ -6,6 +6,11 @@ C:\Users\kylie\GitHub\Verdict\src\main\java\dev\strwbry\verdict\commands\Command
 C:\Users\kylie\GitHub\Verdict\src\main\java\dev\strwbry\verdict\commands\CommandRootVerdict.java
 C:\Users\kylie\GitHub\Verdict\src\main\java\dev\strwbry\verdict\commands\CommandThree.java
 C:\Users\kylie\GitHub\Verdict\src\main\java\dev\strwbry\verdict\commands\CommandTwo.java
+C:\Users\kylie\GitHub\Verdict\src\main\java\dev\strwbry\verdict\database\AbstractDatabase.java
+C:\Users\kylie\GitHub\Verdict\src\main\java\dev\strwbry\verdict\database\Database.java
+C:\Users\kylie\GitHub\Verdict\src\main\java\dev\strwbry\verdict\database\DatabaseManager.java
+C:\Users\kylie\GitHub\Verdict\src\main\java\dev\strwbry\verdict\database\MySQLDatabase.java
 C:\Users\kylie\GitHub\Verdict\src\main\java\dev\strwbry\verdict\utility\Config.java
 C:\Users\kylie\GitHub\Verdict\src\main\java\dev\strwbry\verdict\utility\MsgUtility.java
+C:\Users\kylie\GitHub\Verdict\src\main\java\dev\strwbry\verdict\utility\VerdictLoader.java
 C:\Users\kylie\GitHub\Verdict\src\main\java\dev\strwbry\verdict\Verdict.java

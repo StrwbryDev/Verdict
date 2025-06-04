@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>dev.strwbry</groupId>
-    <artifactId>eventhorizon</artifactId>
+    <artifactId>verdict</artifactId>
     <version>0.0.1-pre-alpha</version>
     <packaging>jar</packaging>
 
@@ -14,18 +14,11 @@
     <properties>
         <java.version>21</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <!--        <junit.jupiter.version>5.8.2</junit.jupiter.version>-->
-        <!--        <maven.maven-surefire-plugin.version>3.0.0-M4</maven.maven-surefire-plugin.version>-->
     </properties>
 
     <build>
         <defaultGoal>clean package</defaultGoal>
         <plugins>
-            <!--            <plugin>-->
-            <!--                <groupId>org.apache.maven.plugins</groupId>-->
-            <!--                <artifactId>maven-surefire-plugin</artifactId>-->
-            <!--                <version>${maven.maven-surefire-plugin.version}</version>-->
-            <!--            </plugin>-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -35,25 +28,6 @@
                     <target>${java.version}</target>
                 </configuration>
             </plugin>
-            <!--            <plugin>-->
-            <!--                <groupId>org.jacoco</groupId>-->
-            <!--                <artifactId>jacoco-maven-plugin</artifactId>-->
-            <!--                <version>0.8.10</version>-->
-            <!--                <executions>-->
-            <!--                    <execution>-->
-            <!--                        <goals>-->
-            <!--                            <goal>prepare-agent</goal>-->
-            <!--                        </goals>-->
-            <!--                    </execution>-->
-            <!--                    <execution>-->
-            <!--                        <id>report</id>-->
-            <!--                        <phase>test</phase>-->
-            <!--                        <goals>-->
-            <!--                            <goal>report</goal>-->
-            <!--                        </goals>-->
-            <!--                    </execution>-->
-            <!--                </executions>-->
-            <!--            </plugin>-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
@@ -61,7 +35,7 @@
                 <configuration>
 
                     <!--                    Kylie's test server output-->
-                    <outputDirectory>C:\Users\kylie\Minecraft Server\1.21.4\plugins\update</outputDirectory>
+                    <outputDirectory>C:\Users\kylie\Minecraft Server\1.21.5\plugins\update</outputDirectory>
                 </configuration>
             </plugin>
             <plugin>
@@ -80,8 +54,7 @@
                     <relocations>
                         <relocation>
                             <pattern>org.bstats</pattern>
-                            <!-- Replace this with your package! -->
-                            <shadedPattern>dev.strwbry.eventhorizon</shadedPattern>
+                            <shadedPattern>dev.strwbry.verdict</shadedPattern>
                         </relocation>
                     </relocations>
                 </configuration>
@@ -105,7 +78,7 @@
 
     <repositories>
         <repository>
-            <id>papermc-repo</id>
+            <id>papermc</id>
             <url>https://repo.papermc.io/repository/maven-public/</url>
         </repository>
         <repository>
@@ -117,28 +90,16 @@
             <url>https://repo.extendedclip.com/content/repositories/placeholderapi/</url>
         </repository>
         <repository>
-            <id>papermc</id>
-            <url>https://repo.papermc.io/repository/maven-public/</url>
-        </repository>
-        <repository>
             <id>enginehub</id>
             <url>https://maven.enginehub.org/repo/</url>
         </repository>
     </repositories>
     <dependencyManagement>
         <dependencies>
-            <!--            <dependency>-->
-            <!--                <groupId>org.junit.jupiter</groupId>-->
-            <!--                <artifactId>junit-jupiter</artifactId>-->
-            <!--                <version>5.10.2</version>-->
-            <!--                <scope>test</scope>-->
-            <!--            </dependency>-->
-            <dependency>
-                <groupId>com.intellectualsites.bom</groupId>
-                <artifactId>bom-newest</artifactId> <!--  Ref: https://github.com/IntellectualSites/bom -->
-                <version>1.52</version>
-                <scope>import</scope>
-                <type>pom</type>
+           <dependency>
+                <groupId>com.zaxxer</groupId>
+                <artifactId>HikariCP</artifactId>
+                <version>5.1.0</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -156,31 +117,22 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>com.fastasyncworldedit</groupId>
-            <artifactId>FastAsyncWorldEdit-Core</artifactId>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.fastasyncworldedit</groupId>
-            <artifactId>FastAsyncWorldEdit-Bukkit</artifactId>
-            <scope>provided</scope>
-            <exclusions>
-                <exclusion>
-                    <artifactId>FastAsyncWorldEdit-Core</artifactId>
-                    <groupId>*</groupId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
             <groupId>org.bstats</groupId>
             <artifactId>bstats-bukkit</artifactId>
             <version>3.0.3</version>
             <scope>compile</scope>
         </dependency>
-        <!--        <dependency>-->
-        <!--            <groupId>org.junit.jupiter</groupId>-->
-        <!--            <artifactId>junit-jupiter</artifactId>-->
-        <!--            <version>${junit.jupiter.version}</version>-->
-        <!--        </dependency>-->
+        <dependency>
+            <groupId>com.zaxxer</groupId>
+            <artifactId>HikariCP</artifactId>
+            <version>5.1.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <version>8.0.33</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 </project>

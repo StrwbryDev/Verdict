@@ -26,7 +26,7 @@ public class CommandRootVerdict
      */
     public static LiteralCommandNode<CommandSourceStack> buildCommand()
     {
-        return Commands.literal("eventhorizon")
+        return Commands.literal("verdict")
                 .then(CommandOne.buildCommand("begin"))
                 .then(CommandTwo.buildCommand("end"))
                 .then(CommandHelp.buildCommand("help"))

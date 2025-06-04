@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>dev.strwbry</groupId>
-  <artifactId>eventhorizon</artifactId>
+  <artifactId>verdict</artifactId>
   <name>Verdict</name>
   <version>0.0.1-pre-alpha</version>
   <build>
@@ -26,7 +26,7 @@
         <artifactId>maven-jar-plugin</artifactId>
         <version>3.4.2</version>
         <configuration>
-          <outputDirectory>C:\Users\kylie\Minecraft Server\1.21.4\plugins\update</outputDirectory>
+          <outputDirectory>C:\Users\kylie\Minecraft Server\1.21.5\plugins\update</outputDirectory>
         </configuration>
       </plugin>
       <plugin>
@@ -52,7 +52,7 @@
           <relocations>
             <relocation>
               <pattern>org.bstats</pattern>
-              <shadedPattern>dev.strwbry.eventhorizon</shadedPattern>
+              <shadedPattern>dev.strwbry.verdict</shadedPattern>
             </relocation>
           </relocations>
         </configuration>
@@ -61,7 +61,7 @@
   </build>
   <repositories>
     <repository>
-      <id>papermc-repo</id>
+      <id>papermc</id>
       <url>https://repo.papermc.io/repository/maven-public/</url>
     </repository>
     <repository>
@@ -71,10 +71,6 @@
     <repository>
       <id>placeholderapi</id>
       <url>https://repo.extendedclip.com/content/repositories/placeholderapi/</url>
-    </repository>
-    <repository>
-      <id>papermc</id>
-      <url>https://repo.papermc.io/repository/maven-public/</url>
     </repository>
     <repository>
       <id>enginehub</id>
@@ -95,32 +91,24 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>com.fastasyncworldedit</groupId>
-      <artifactId>FastAsyncWorldEdit-Core</artifactId>
-      <version>2.12.3</version>
+      <groupId>com.zaxxer</groupId>
+      <artifactId>HikariCP</artifactId>
+      <version>5.1.0</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>com.fastasyncworldedit</groupId>
-      <artifactId>FastAsyncWorldEdit-Bukkit</artifactId>
-      <version>2.12.3</version>
+      <groupId>com.mysql</groupId>
+      <artifactId>mysql-connector-j</artifactId>
+      <version>8.0.33</version>
       <scope>provided</scope>
-      <exclusions>
-        <exclusion>
-          <artifactId>FastAsyncWorldEdit-Core</artifactId>
-          <groupId>*</groupId>
-        </exclusion>
-      </exclusions>
     </dependency>
   </dependencies>
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>com.intellectualsites.bom</groupId>
-        <artifactId>bom-newest</artifactId>
-        <version>1.52</version>
-        <type>pom</type>
-        <scope>import</scope>
+        <groupId>com.zaxxer</groupId>
+        <artifactId>HikariCP</artifactId>
+        <version>5.1.0</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
