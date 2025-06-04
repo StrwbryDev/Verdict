@@ -6,7 +6,7 @@
 
 - Ticketing system for structured player support  
 - Moderation commands for issuing warnings, mutes, bans, and kicks  
-- Supports both MySQL and SQLite for flexible storage options  
+- Supports both MySQL and SQLite for flexible storage options
 - Integration with popular permissions plugins  
 - Configurable messages and behavior to fit any server's needs  
 
@@ -41,4 +41,4 @@ To report issues, request features, or ask for help, please open an issue on the
 
 ## License
 
-This project is licensed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html). See the [L]()
+This project is licensed under the GNU General Public License v3.0 (GPL-3.0). See the [LICENSE](./LICENSE) file for more information.
